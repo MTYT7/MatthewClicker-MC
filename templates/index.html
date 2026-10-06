@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mathew Clicker Web</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <h1>Mathew Clicker Web</h1>
+        <p>Click your way to Mathew greatness.</p>
+      </header>
+
+      <main class="game-panel">
+        <div id="score" class="score">0 Mathew Points</div>
+        <div id="rate" class="rate">1 per click | 0 per second</div>
+        <div id="status" class="status">Click to begin your empire.</div>
+
+        <button id="clickButton" class="click-button">CLICK MATHEW!</button>
+
+        <div class="meter-wrap">
+          <div class="meter-title">REBIRTH METER</div>
+          <div class="meter-bar">
+            <div id="meterFill" class="meter-fill"></div>
+          </div>
+          <div id="meterLabel" class="meter-label">0 / 1,000,000</div>
+          <button id="rebirthButton" class="rebirth-button" disabled>REBIRTH</button>
+        </div>
+
+        <div class="toolbar">
+          <button id="saveButton">Save</button>
+          <button id="statsButton">Stats</button>
+          <button id="upgradesButton">Upgrades</button>
+        </div>
+
+        <div id="achievement" class="achievement">Achievement: Keep clicking!</div>
+      </main>
+    </div>
+
+    <div id="upgradeModal" class="modal hidden">
+      <div class="modal-panel">
+        <div class="modal-header">
+          <h2>Mathew Upgrades</h2>
+          <button id="closeModalButton" class="close-button">×</button>
+        </div>
+        <div id="upgradeList" class="upgrade-list"></div>
+      </div>
+    </div>
+
+    <script src="/static/js/game.js"></script>
+  </body>
+</html>
